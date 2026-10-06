@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#152822">
+  <title>Blissful Ignorance</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/world-first.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Blissful Ignorance home"><img src="/icon.svg" width="38" height="38" alt=""><span>BLISSFUL <em>IGNORANCE</em></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="/" aria-current="page">The world</a><a href="/docs/progress/index.html?from=world">Research <span aria-hidden="true">↗</span></a></nav>
+    <div class="header-actions"><button id="helpButton" class="quiet">Controls <kbd>?</kbd></button><button id="saveButton" class="quiet">Save world</button><button id="loadButton" class="quiet">Load</button></div>
+  </header>
+  <main>
+    <section class="world-column" aria-label="World">
+      <div class="world-toolbar">
+        <div class="location"><span class="eyebrow">A WORLD OF THEIR OWN</span><h1>The first clearing</h1></div>
+        <div class="conditions"><span id="weather">☀ Clear</span><span class="divider"></span><strong id="day">Day 1</strong><span id="clock">06:00</span></div>
+      </div>
+      <div class="stage" id="stage">
+        <canvas id="world" tabindex="0" aria-label="Blissful Ignorance valley. Use WASD or arrow keys to move, E to gather. Select residents using the list beside the map."></canvas>
+        <div id="connection" class="connection">Opening the valley…</div>
+        <div class="map-top"><span class="map-badge" id="worldMode">CONNECTING</span><div class="map-switches"><button id="overviewButton" class="map-button" title="Fit all characters in the map">Everyone</button><button id="perspectiveButton" class="map-button" aria-pressed="false">Through their eyes</button><button id="followButton" class="map-button" aria-pressed="true" title="Follow the selected character">◎ Follow you</button><button id="focusMapButton" class="map-button" aria-pressed="false" aria-label="Expand map">⛶</button></div></div>
+        <div class="map-bottom"><div><span class="map-caption" id="cameraCaption">YOUR TRAVELER</span><p id="mapHint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move <span>·</span> drag to look around</p></div><canvas id="minimap" width="144" height="144" aria-label="Overview of the valley"></canvas></div>
+        <div class="zoom-controls"><button id="zoomOut" aria-label="Zoom out">−</button><button id="zoomIn" aria-label="Zoom in">+</button></div>
+        <div class="move-pad" role="group" aria-label="Move your character"><button data-action="move" data-direction="north" aria-label="Move north">↑</button><button data-action="move" data-direction="west" aria-label="Move west">←</button><button data-action="move" data-direction="south" aria-label="Move south">↓</button><button data-action="move" data-direction="east" aria-label="Move east">→</button></div>
+        <div id="toast" role="status" aria-live="polite"></div>
+        <div id="pauseOverlay" class="pause-overlay" hidden>WORLD PAUSED<span>Space to resume · Step to advance once</span></div>
+      </div>
+      <div class="time-bar" aria-label="Simulation time controls">
+        <button id="pauseButton" class="pause-button" aria-label="Pause world">Ⅱ <span>Pause</span></button>
+        <button id="stepButton" class="quiet" title="Advance one tick while paused">Step ›</button>
+        <span class="time-divider"></span>
+        <div class="speed-options" role="group" aria-label="World speed"><button data-speed="1" class="active" aria-pressed="true">1×</button><button data-speed="5" aria-pressed="false">5×</button><button data-speed="20" aria-pressed="false">20×</button><button data-speed="max" aria-pressed="false" title="Save a checkpoint, then advance as fast as this computer allows">Max »</button></div>
+        <span id="speedReadout" class="speed-readout">Normal time</span><span id="tickReadout" class="tick-readout">0 ticks</span>
+      </div>
+      <div class="action-dock" aria-label="Player actions">
+        <div class="action-label"><span class="eyebrow">YOUR ACTIONS</span><span id="packCount">Pack 0 / 12</span></div>
+        <button data-action="gather" title="Gather from your tile or an adjacent tile"><span class="action-icon">♧</span>Gather<kbd>E</kbd></button>
+        <button data-action="eat"><span class="action-icon">◒</span>Eat<kbd>F</kbd></button>
+        <button data-action="make_seeds" title="Use 1 ordinary food to make 2 seeds">Make seeds<kbd>T</kbd></button>
+        <button data-action="plant" title="Plant one seed on empty grass. With ecology enabled, growth needs water and fertile soil.">Plant<kbd>P</kbd></button>
+        <button data-action="tap" title="Gently tap a conscious adjacent neighbor">Tap<kbd>J</kbd></button>
+        <label for="toneSelect">Tone</label><select id="toneSelect" aria-label="Tone symbol"><option value="0">Tone 0</option><option value="1">Tone 1</option><option value="2">Tone 2</option><option value="3">Tone 3</option><option value="4">Tone 4</option><option value="5">Tone 5</option><option value="6">Tone 6</option><option value="7">Tone 7</option><option value="8">Tone 8</option><option value="9">Tone 9</option></select>
+        <button data-action="tone" title="Emit a short tone nearby; tones have no predefined meaning">Sound<kbd>K</kbd></button>
+        <button data-action="fill_water">Fill flask</button>
+        <button data-action="water_crop">Water crop</button>
+        <button data-action="make_cache">Make basket</button>
+        <button data-action="stash">Store food</button>
+        <button data-action="take_food">Take food</button>
+        <button data-action="move_cache">Carry/place</button>
+        <button data-action="revive" title="Help an unconscious adjacent resident; costs 10 energy; shares 1 food if available with a hungry neighbor">Help up<kbd>H</kbd></button>
+        <button data-action="drink"><span class="action-icon">♢</span>Drink<kbd>R</kbd></button>
+        <button data-action="give"><span class="action-icon">⇄</span>Give<kbd>G</kbd></button>
+        <button id="buildButton" aria-expanded="false" aria-controls="buildPanel"><span class="action-icon">⌂</span>Build<kbd>B</kbd></button>
+        <button data-action="toggle_door" title="Open or close a nearby door">Door<kbd>O</kbd></button>
+        <label class="item-picker"><span>Eat / give / drop</span><select id="itemSelect" aria-label="Item to eat, give or drop"><option value="food">Food</option><option value="wood">Wood</option><option value="stone">Stone</option><option value="seed">Seeds</option><option value="amber_fruit">Amber fruit</option></select></label><button data-action="drop" class="drop-button" title="Drop one selected item">Drop<kbd>Q</kbd></button>
+      </div>
+      <section id="buildPanel" class="build-panel" aria-label="Construction" hidden>
+        <div class="build-heading"><span class="eyebrow">MAKE A HOME</span><button id="closeBuild" class="quiet">Done <kbd>Esc</kbd></button></div>
+        <div id="buildPalette" class="build-palette" role="group" aria-label="Choose a construction piece"></div>
+        <div class="build-instructions"><p id="buildHint">Choose a piece, then click your tile or a tile beside you.</p><button id="placeAhead" class="quiet">Place ahead ↗</button><button id="placeHere" class="quiet">At your feet ↓</button></div>
+        <p class="building-note">Enclose wooden floors with walls and a doorway to make a roofed room (up to 64 floor tiles). Remove recovers materials; your pack needs space.</p>
+      </section>
+      <footer class="world-footer"><span id="controllerNotice">Independent learning residents · skills develop through experience.</span><span id="saveStatus">Local world · mortality off</span></footer>
+    </section>
+    <aside class="sidebar" aria-label="Residents and world activity">
+      <div class="sidebar-heading"><span class="eyebrow">IN THE VALLEY</span><span class="population"><span id="residentCount">08</span> <small>residents</small></span></div>
+      <p class="roster-hint">Choose a character to follow their life.</p>
+      <div id="roster" class="roster" aria-label="Choose a resident"></div>
+      <button id="selectPlayer" class="select-player"><span>◎</span> Your traveler <span>↗</span></button>
+      <section class="inspector" aria-label="Selected creature">
+        <div class="resident-heading"><canvas id="portrait" width="96" height="96" aria-hidden="true"></canvas><div><span class="eyebrow" id="selectedKind">YOUR CHARACTER</span><h2 id="selectedName">You</h2><p id="selectedAction">Looking around</p></div><span class="resident-mark" id="residentMark">01</span></div>
+        <div id="needs" class="needs"></div>
+        <div class="inventory-title"><span class="eyebrow">CARRYING</span><span id="inventoryCount">0 / 12</span></div><div id="inventory" class="inventory"></div>
+        <div class="resident-stats"><span><b id="gatheredCount">0</b> gathered</span><span><b id="sharedCount">0</b> shared</span><span><b id="stepsCount">0</b> steps</span></div>
+        <p id="injuryStats" class="sensory-note">0 amber eaten · 0 thorn contacts · 0 damage taken</p><section class="senses" aria-label="Individual senses"><div class="journal-heading"><span class="eyebrow">THEIR SENSES</span><span id="visionCount" class="sense-count">Local view</span></div><div class="sense-summary"><canvas id="senseImage" width="90" height="90" aria-label="Selected resident's compressed visual view"></canvas><div><p id="bodySense">Feeling the surroundings</p><p id="hungerSense" role="status" aria-live="polite"></p><p id="touchSense">Touch</p><p id="hearingSense">Listening</p><p id="learningSense"></p><p id="ecologySense"></p><p id="toneMemory">No recent tones</p></div></div><p class="sensory-note">Only this creature's inputs. The valley journal is an observer tool.</p></section>
+        <section class="memories" aria-label="Visual memories"><div class="journal-heading"><span class="eyebrow">VISUAL IMPRESSIONS</span><span id="memoryCount" class="sense-count">0 saved</span></div><div id="memoryCards" class="memory-cards"></div><p class="sensory-note">Lossy sketches recalled by resemblance. Similarity is not certainty or an exact location.</p></section>
+      </section>
+      <p id="economyStats" class="sensory-note">Shared harvests</p>
+      <section class="journal"><div class="journal-heading"><span class="eyebrow">VALLEY JOURNAL</span><span class="journal-dot"></span></div><ol id="journal"></ol></section>
+    </aside>
+  </main>
+  <section class="research-peek" aria-label="Latest research"><div><span class="eyebrow">FROM THE LAB · OCT 06</span><p><strong>More practice. Same six learners.</strong> Nearby-food successes rose from 75/96 to 95/96 in a separate experiment.</p></div><a href="/docs/progress/index.html?from=world">Explore the evidence <span aria-hidden="true">↗</span></a><span class="research-boundary">GT-01 remains open · live residents retain their own brains</span></section>
+  <dialog id="helpDialog"><button id="closeHelp" class="close-dialog" aria-label="Close controls">×</button><span class="eyebrow">BLISSFUL IGNORANCE</span><h2>A place to begin</h2><p>You are the pale creature with the small diamond above its head. Walk alongside the residents and work with the same resources.</p><dl><dt>WASD / arrows</dt><dd>Move one tile at a time</dd><dt>E</dt><dd>Gather nearby materials or pick up an item</dd><dt>F / R</dt><dd>Eat selected food / drink beside the river</dd><dt>T / P</dt><dd>Turn 1 ordinary food into 2 seeds / plant 1 seed at your feet on empty grass. With ecology enabled, crops grow according to fertility and moisture, yielding 2–3 food. Fill the flask beside water and water dry crops. Anyone can harvest; wild bushes no longer refill.</dd><dt>Flask / baskets</dt><dd>Fill beside water; water a nearby crop. Make a basket with 3 wood, store or take one food, and carry/place it. Basket weight: 4 pack spaces plus stored food.</dd><dt>J / K</dt><dd>Tap an adjacent neighbor / emit one short selected tone (0–9), with a brief gap before the next. Neighbors hear direction and fading strength; meanings are not predefined.</dd><dt>H</dt><dd>Help an unconscious neighbor up (10 energy)</dd><dt>G / Q</dt><dd>Give to an adjacent resident / drop an item</dd><dt>B / Esc</dt><dd>Open / close the construction palette</dd><dt>O</dt><dd>Open or close a nearby door</dd><dt>Space</dt><dd>Pause or resume</dd><dt>Drag / scroll</dt><dd>Look around / zoom the map</dd></dl><p class="help-note">Build walls beside you, lay floors, and leave a doorway. Place pieces with a click or the Place ahead / At your feet buttons. Removing a top piece keeps any floor beneath it. Click a resident, then Through their eyes to inspect its own limited view, hearing, touch, and visual memories.</p><p class="help-note">Every resident chooses through its own learning neural controller, individual senses and lossy visual memory. Brains start untrained; survival skills develop through experience. Learned communication and reproduction are still under development. Amber fruit hurts when eaten; thorns hurt when walked on or handled. Health recovers slowly after injury and creatures cannot die in this development world. Hunger below 60 reduces rest recovery; below 20 weakens movement. Prolonged zero fullness causes brief fainting. Eating relieves hunger. Helping a hungry neighbor up shares one food if you have it.</p></dialog>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Taps and ten-tone sequences (v0.7)
+
+Player: J taps a conscious adjacent neighbor; select Tone 0 through Tone 9 and press K to emit one short symbol. All resident controllers have the same ten actions. The numbers identify distinguishable sounds; they do not mean quantities, words, commands or rewards. Tone events are simulation inputs and displayed in the senses panel; browser speaker playback is not implemented.
+
+Each symbol sounds for two simulation ticks (0.5 seconds at 1x). An actor can emit again after three ticks: one silent tick separates successive symbols. Holding K does not sustain or automatically repeat a tone. There is one pitch per actor at a time; different actors can overlap. Range is six Manhattan tiles, with strength fading during the sound and reduced behind obstacles. Fast-forward scales simulation time rather than increasing message capacity per tick.
+
+Agents can build sequences such as 2,7,2. A private auditory memory retains up to 32 recently heard tone events for 80 ticks (20 seconds at 1x), oldest first. These are adjustable sensory-buffer settings, not a message-length grammar. Each record has symbol, direction, strength when heard and age. Repeated symbols and silent gaps remain distinguishable. Events enter memory only when actually heard during world steps, never from another resident's history. Unconscious agents do not acquire new auditory memories. Leaving and re-entering range does not create a second event for the same sound. Source identity and absolute coordinates are internal bookkeeping and never enter observations or neural inputs.
+
+The general recurrent neural controller has ten tone outputs plus an ordered memory encoding with symbol, direction, age, strength and presence per slot. These arrived in observation schema 8 and action schema 7; subsequent ecology additions changed the dimensions again. Checkpoints require explicit migration when dimensions change. The main valley now uses eight independent PPO controllers and distinct local NPU Laya, with model-selected tone actions. Useful meanings or interpretation of sequences have not been established. The earlier separate tabular farming learner had no social actions. See [current population status](POPULATION-WATCH.md).
+
+Tap behavior is unchanged: adjacent conscious target, facing-first selection, eight-tick cooldown, private directional notice lasting 16 ticks, at most four notices. No injury, forced waking, following or compliance.
+
+Saves preserve auditory memories, sound events and cooldowns; old saves receive empty auditory memories. Legacy low/mid/high API values are aliases for 0/1/2 and saved events migrate accordingly. The visible menu and neural actions expose exactly ten choices.
+
+The earlier [three-tone experiment](TONE-TRIAL.md) passed muted/shuffled controls, but does not validate ten-tone sequence learning. That exact run used commit fa5bcfd; the current runner still restricts its own protocol to symbols 0,1,2. Next experiment should require multiple symbols to distinguish more than ten situations and use both muted and order-shuffled controls. No meanings or message boundaries should be preassigned.

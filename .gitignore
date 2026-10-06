@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+runs/
+local/
+BUILD-PLAN.md
+.env
+.env.*
+*.log
+*.pt
+*.pth
+*.onnx

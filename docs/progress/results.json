@@ -1,0 +1,1044 @@
+{
+  "schema": 1,
+  "date": "2026-10-06",
+  "experiment": "retained-practice-amount",
+  "fixtures": {
+    "adjacent": {
+      "arms": {
+        "starting": {
+          "lives": 96,
+          "prompt_successes": 75,
+          "full_life_successes": 88,
+          "ordinary_meals": 243,
+          "amber_meals": 0,
+          "zero_food_ticks": 104,
+          "unconscious_ticks": 0,
+          "resident_ticks": 49152,
+          "mean_unique_tiles": 18.104166666666668,
+          "actions": {
+            "gather": 399,
+            "drop": 80,
+            "rest": 3689,
+            "tone": 3909,
+            "make_seeds": 71,
+            "plant": 142,
+            "move": 3755,
+            "eat": 243
+          },
+          "damage": 0.0,
+          "invalid": 0
+        },
+        "after-16": {
+          "lives": 96,
+          "prompt_successes": 82,
+          "full_life_successes": 88,
+          "ordinary_meals": 283,
+          "amber_meals": 0,
+          "zero_food_ticks": 104,
+          "unconscious_ticks": 0,
+          "resident_ticks": 49152,
+          "mean_unique_tiles": 18.333333333333332,
+          "actions": {
+            "gather": 425,
+            "drop": 87,
+            "rest": 3620,
+            "tone": 3620,
+            "make_seeds": 54,
+            "eat": 283,
+            "plant": 107,
+            "move": 4092
+          },
+          "damage": 0.0,
+          "invalid": 0
+        },
+        "after-64": {
+          "lives": 96,
+          "prompt_successes": 95,
+          "full_life_successes": 96,
+          "ordinary_meals": 378,
+          "amber_meals": 0,
+          "zero_food_ticks": 0,
+          "unconscious_ticks": 0,
+          "resident_ticks": 49152,
+          "mean_unique_tiles": 16.447916666666668,
+          "actions": {
+            "gather": 389,
+            "eat": 378,
+            "tone": 4872,
+            "move": 3537,
+            "rest": 3091,
+            "drop": 6,
+            "make_seeds": 5,
+            "plant": 10
+          },
+          "damage": 0.0,
+          "invalid": 0
+        }
+      },
+      "candidates": {
+        "c0": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 10,
+            "full_life_successes": 13,
+            "ordinary_meals": 32,
+            "amber_meals": 0,
+            "zero_food_ticks": 39,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 18.125,
+            "actions": {
+              "gather": 75,
+              "drop": 25,
+              "rest": 692,
+              "tone": 592,
+              "make_seeds": 17,
+              "plant": 34,
+              "move": 581,
+              "eat": 32
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 12,
+            "full_life_successes": 14,
+            "ordinary_meals": 37,
+            "amber_meals": 0,
+            "zero_food_ticks": 26,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 17.3125,
+            "actions": {
+              "gather": 83,
+              "drop": 32,
+              "rest": 634,
+              "tone": 621,
+              "make_seeds": 14,
+              "eat": 37,
+              "plant": 28,
+              "move": 599
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 62,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 12.1875,
+            "actions": {
+              "gather": 65,
+              "eat": 62,
+              "tone": 1063,
+              "move": 450,
+              "rest": 401,
+              "drop": 1,
+              "make_seeds": 2,
+              "plant": 4
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c1": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 14,
+            "full_life_successes": 16,
+            "ordinary_meals": 42,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 22.5,
+            "actions": {
+              "tone": 458,
+              "gather": 67,
+              "move": 867,
+              "rest": 577,
+              "eat": 42,
+              "make_seeds": 7,
+              "plant": 14,
+              "drop": 16
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 56,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 24.9375,
+            "actions": {
+              "tone": 418,
+              "gather": 70,
+              "move": 1224,
+              "eat": 56,
+              "rest": 256,
+              "drop": 9,
+              "make_seeds": 5,
+              "plant": 10
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 64,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 18.5,
+            "actions": {
+              "tone": 1077,
+              "gather": 64,
+              "eat": 64,
+              "move": 632,
+              "rest": 211
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c2": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 14,
+            "full_life_successes": 15,
+            "ordinary_meals": 54,
+            "amber_meals": 0,
+            "zero_food_ticks": 13,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 17.8125,
+            "actions": {
+              "move": 598,
+              "tone": 791,
+              "rest": 537,
+              "gather": 59,
+              "eat": 54,
+              "drop": 3,
+              "make_seeds": 2,
+              "plant": 4
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 14,
+            "full_life_successes": 15,
+            "ordinary_meals": 57,
+            "amber_meals": 0,
+            "zero_food_ticks": 13,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 19.125,
+            "actions": {
+              "move": 593,
+              "tone": 674,
+              "rest": 646,
+              "gather": 66,
+              "eat": 57,
+              "drop": 6,
+              "make_seeds": 2,
+              "plant": 4
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 64,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 16.625,
+            "actions": {
+              "rest": 479,
+              "tone": 732,
+              "gather": 66,
+              "eat": 64,
+              "move": 705,
+              "drop": 2
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c3": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 13,
+            "full_life_successes": 14,
+            "ordinary_meals": 35,
+            "amber_meals": 0,
+            "zero_food_ticks": 26,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 17.0625,
+            "actions": {
+              "gather": 64,
+              "drop": 15,
+              "rest": 671,
+              "tone": 608,
+              "eat": 35,
+              "move": 616,
+              "make_seeds": 13,
+              "plant": 26
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 14,
+            "full_life_successes": 16,
+            "ordinary_meals": 44,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 16.75,
+            "actions": {
+              "gather": 74,
+              "drop": 17,
+              "eat": 44,
+              "rest": 669,
+              "tone": 600,
+              "move": 606,
+              "make_seeds": 13,
+              "plant": 25
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 15,
+            "full_life_successes": 16,
+            "ordinary_meals": 64,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 17.625,
+            "actions": {
+              "gather": 64,
+              "eat": 64,
+              "rest": 900,
+              "move": 630,
+              "tone": 390
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c4": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 15,
+            "full_life_successes": 16,
+            "ordinary_meals": 51,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 17.1875,
+            "actions": {
+              "gather": 68,
+              "eat": 51,
+              "tone": 743,
+              "move": 542,
+              "rest": 610,
+              "make_seeds": 9,
+              "plant": 18,
+              "drop": 7
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 15,
+            "full_life_successes": 15,
+            "ordinary_meals": 59,
+            "amber_meals": 0,
+            "zero_food_ticks": 13,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 15.5625,
+            "actions": {
+              "gather": 60,
+              "eat": 59,
+              "tone": 607,
+              "move": 499,
+              "rest": 820,
+              "make_seeds": 1,
+              "plant": 2
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 64,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 14.5,
+            "actions": {
+              "gather": 64,
+              "eat": 64,
+              "rest": 676,
+              "tone": 773,
+              "move": 471
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c5": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 9,
+            "full_life_successes": 14,
+            "ordinary_meals": 29,
+            "amber_meals": 0,
+            "zero_food_ticks": 26,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 15.9375,
+            "actions": {
+              "tone": 717,
+              "move": 551,
+              "rest": 602,
+              "gather": 66,
+              "eat": 29,
+              "drop": 14,
+              "make_seeds": 23,
+              "plant": 46
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 11,
+            "full_life_successes": 12,
+            "ordinary_meals": 30,
+            "amber_meals": 0,
+            "zero_food_ticks": 52,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 16.3125,
+            "actions": {
+              "tone": 700,
+              "move": 571,
+              "rest": 595,
+              "gather": 72,
+              "eat": 30,
+              "drop": 23,
+              "make_seeds": 19,
+              "plant": 38
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": 16,
+            "ordinary_meals": 60,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 8192,
+            "mean_unique_tiles": 19.25,
+            "actions": {
+              "tone": 837,
+              "gather": 66,
+              "eat": 60,
+              "move": 649,
+              "rest": 424,
+              "drop": 3,
+              "make_seeds": 3,
+              "plant": 6
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        }
+      }
+    },
+    "carried": {
+      "arms": {
+        "starting": {
+          "lives": 96,
+          "prompt_successes": 58,
+          "full_life_successes": null,
+          "ordinary_meals": 69,
+          "amber_meals": 0,
+          "zero_food_ticks": 0,
+          "unconscious_ticks": 0,
+          "resident_ticks": 6144,
+          "mean_unique_tiles": 4.479166666666667,
+          "actions": {
+            "move": 419,
+            "rest": 441,
+            "tone": 491,
+            "eat": 69,
+            "make_seeds": 25,
+            "plant": 47,
+            "drop": 23,
+            "gather": 21
+          },
+          "damage": 0.0,
+          "invalid": 0
+        },
+        "after-16": {
+          "lives": 96,
+          "prompt_successes": 65,
+          "full_life_successes": null,
+          "ordinary_meals": 75,
+          "amber_meals": 0,
+          "zero_food_ticks": 0,
+          "unconscious_ticks": 0,
+          "resident_ticks": 6144,
+          "mean_unique_tiles": 4.583333333333333,
+          "actions": {
+            "move": 442,
+            "rest": 451,
+            "tone": 471,
+            "eat": 75,
+            "make_seeds": 19,
+            "plant": 34,
+            "drop": 23,
+            "gather": 21
+          },
+          "damage": 0.0,
+          "invalid": 0
+        },
+        "after-64": {
+          "lives": 96,
+          "prompt_successes": 95,
+          "full_life_successes": null,
+          "ordinary_meals": 96,
+          "amber_meals": 0,
+          "zero_food_ticks": 0,
+          "unconscious_ticks": 0,
+          "resident_ticks": 6144,
+          "mean_unique_tiles": 3.5833333333333335,
+          "actions": {
+            "move": 301,
+            "eat": 96,
+            "tone": 679,
+            "rest": 452,
+            "drop": 4,
+            "gather": 4
+          },
+          "damage": 0.0,
+          "invalid": 0
+        }
+      },
+      "candidates": {
+        "c0": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 6,
+            "full_life_successes": null,
+            "ordinary_meals": 9,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.4375,
+            "actions": {
+              "move": 64,
+              "rest": 89,
+              "tone": 66,
+              "eat": 9,
+              "make_seeds": 5,
+              "plant": 9,
+              "drop": 8,
+              "gather": 6
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 6,
+            "full_life_successes": null,
+            "ordinary_meals": 10,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.5,
+            "actions": {
+              "move": 69,
+              "rest": 74,
+              "tone": 77,
+              "eat": 10,
+              "make_seeds": 5,
+              "plant": 8,
+              "drop": 7,
+              "gather": 6
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.3125,
+            "actions": {
+              "move": 64,
+              "eat": 16,
+              "tone": 138,
+              "rest": 36,
+              "drop": 1,
+              "gather": 1
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c1": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 9,
+            "full_life_successes": null,
+            "ordinary_meals": 11,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 5.125,
+            "actions": {
+              "eat": 11,
+              "tone": 68,
+              "rest": 66,
+              "move": 90,
+              "drop": 3,
+              "gather": 3,
+              "make_seeds": 5,
+              "plant": 10
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 13,
+            "full_life_successes": null,
+            "ordinary_meals": 14,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 7.125,
+            "actions": {
+              "eat": 14,
+              "tone": 68,
+              "rest": 28,
+              "move": 138,
+              "make_seeds": 2,
+              "plant": 4,
+              "drop": 1,
+              "gather": 1
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.0625,
+            "actions": {
+              "eat": 16,
+              "tone": 179,
+              "move": 41,
+              "rest": 20
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c2": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 11,
+            "full_life_successes": null,
+            "ordinary_meals": 13,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.9375,
+            "actions": {
+              "make_seeds": 3,
+              "move": 59,
+              "tone": 109,
+              "plant": 6,
+              "rest": 62,
+              "drop": 2,
+              "gather": 2,
+              "eat": 13
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 11,
+            "full_life_successes": null,
+            "ordinary_meals": 13,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.5,
+            "actions": {
+              "make_seeds": 3,
+              "rest": 82,
+              "tone": 95,
+              "plant": 4,
+              "move": 51,
+              "drop": 4,
+              "gather": 4,
+              "eat": 13
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.1875,
+            "actions": {
+              "eat": 16,
+              "rest": 42,
+              "tone": 151,
+              "move": 45,
+              "drop": 1,
+              "gather": 1
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c3": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 10,
+            "full_life_successes": null,
+            "ordinary_meals": 11,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.875,
+            "actions": {
+              "move": 75,
+              "eat": 11,
+              "rest": 79,
+              "tone": 74,
+              "make_seeds": 5,
+              "plant": 10,
+              "drop": 1,
+              "gather": 1
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 10,
+            "full_life_successes": null,
+            "ordinary_meals": 11,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.6875,
+            "actions": {
+              "move": 72,
+              "eat": 11,
+              "rest": 81,
+              "tone": 71,
+              "drop": 3,
+              "gather": 3,
+              "make_seeds": 5,
+              "plant": 10
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.375,
+            "actions": {
+              "rest": 162,
+              "eat": 16,
+              "move": 49,
+              "tone": 29
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c4": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 12,
+            "full_life_successes": null,
+            "ordinary_meals": 14,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.625,
+            "actions": {
+              "move": 73,
+              "tone": 93,
+              "eat": 14,
+              "rest": 61,
+              "drop": 5,
+              "gather": 5,
+              "make_seeds": 2,
+              "plant": 3
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 15,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.8125,
+            "actions": {
+              "move": 55,
+              "tone": 81,
+              "eat": 16,
+              "rest": 100,
+              "drop": 2,
+              "gather": 2
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 15,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 2.8125,
+            "actions": {
+              "rest": 131,
+              "eat": 16,
+              "move": 31,
+              "tone": 74,
+              "drop": 2,
+              "gather": 2
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        },
+        "c5": {
+          "starting": {
+            "lives": 16,
+            "prompt_successes": 10,
+            "full_life_successes": null,
+            "ordinary_meals": 11,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.875,
+            "actions": {
+              "eat": 11,
+              "rest": 84,
+              "move": 58,
+              "tone": 81,
+              "make_seeds": 5,
+              "plant": 9,
+              "drop": 4,
+              "gather": 4
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-16": {
+            "lives": 16,
+            "prompt_successes": 10,
+            "full_life_successes": null,
+            "ordinary_meals": 11,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 3.875,
+            "actions": {
+              "eat": 11,
+              "move": 57,
+              "tone": 79,
+              "rest": 86,
+              "make_seeds": 4,
+              "plant": 8,
+              "drop": 6,
+              "gather": 5
+            },
+            "damage": 0.0,
+            "invalid": 0
+          },
+          "after-64": {
+            "lives": 16,
+            "prompt_successes": 16,
+            "full_life_successes": null,
+            "ordinary_meals": 16,
+            "amber_meals": 0,
+            "zero_food_ticks": 0,
+            "unconscious_ticks": 0,
+            "resident_ticks": 1024,
+            "mean_unique_tiles": 4.75,
+            "actions": {
+              "eat": 16,
+              "rest": 61,
+              "move": 71,
+              "tone": 108
+            },
+            "damage": 0.0,
+            "invalid": 0
+          }
+        }
+      }
+    }
+  },
+  "checks": {
+    "long_prompt_at_least_80_percent": true,
+    "long_exceeds_16_by_10_points": true,
+    "long_exceeds_start_by_10_points": true,
+    "positive_long_minus_16_in_at_least_two_seed_groups": true,
+    "carried_regression_no_more_than_5_points": true,
+    "deprivation_increase_no_more_than_half_point": true
+  },
+  "pilot_promising": true,
+  "milestone_confirmed": false,
+  "audit": {
+    "passed": true,
+    "seconds": 468.2955845000106,
+    "episodes": 480,
+    "replayed_ticks": 181248,
+    "replayed_training_decisions": 49152,
+    "replayed_frozen_decisions": 41472,
+    "reproduced_updates": 384,
+    "full_checkpoint_states": 24,
+    "shared_code": "Native simulator and brain, observation encoder/mask and full-state fingerprint; rollout, reward reconstruction and outcome recount are separate implementations."
+  },
+  "tests": {
+    "count": 217,
+    "optional_pettingzoo_passed": true,
+    "scope": "Recorded full suite from the practice experiment, not rerun by this exporter"
+  },
+  "protocol": {
+    "seeds": [
+      77501,
+      77513,
+      77527
+    ],
+    "config": {
+      "hidden_size": 64,
+      "rollout": 128,
+      "epochs": 4,
+      "learning_rate": 0.0003,
+      "gamma": 0.997,
+      "gae_lambda": 0.98,
+      "clip": 0.2,
+      "entropy": 0.01,
+      "target_kl": 0.03,
+      "journal_capacity": 128,
+      "curiosity_coefficient": 0.0
+    },
+    "starting_decisions_per_brain": 6144,
+    "additional_practice_lives": [
+      0,
+      16,
+      64
+    ],
+    "practice_life_ticks": 512,
+    "adjacent_deadline_exclusive": 64,
+    "carried_deadline_exclusive": 16,
+    "evaluation_frozen": true
+  },
+  "source_hashes": {
+    "analysis.json": "6b97a186c3b486433d2b1f9a5d088457e4b91aae0939fe0df661597de0944d87",
+    "preregistration.json": "3c2b2291a22389bbfe6b2693c2e4434d8d672bbe17c9be91d95b46326ead96e5",
+    "audit.json": "4bea4b9d5e817fa9b6e9dd6475e0d25553ea71ac7e7489145d32d14771247886",
+    "replay-adjacent.html": "ea739dc7ed96588e45fe6370e4a1bce4b600e697f9f9b9860b8c34855d42ebc2"
+  },
+  "limits": [
+    "Six retained brains in three historical training groups; cases are clustered.",
+    "Starting policies were already trained. No random-policy arm in this comparison.",
+    "Fresh seeded instances of the same nearby-food fixture; not navigation transfer.",
+    "GT-01 remains open. No experimental weights were imported into live residents.",
+    "Public summary and selected replay only. Full traces and checkpoints remain local."
+  ]
+}
