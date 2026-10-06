@@ -1,5 +1,14 @@
 # Changelog
 
+## October 6, 2026 — Free recorded showcase on Hugging Face
+
+- Publish the [static showcase](https://huggingface.co/spaces/Maverick03511/blissful-ignorance)
+  with a map screenshot, per-learner charts and recorded experiment playback.
+- Build the 11-file package from a pinned public Git commit, with no model,
+  package installation, paid compute or connection to the continuing local world.
+- Verify chart data and replay controls, and keep navigation clear of the
+  hosting platform's floating header. [Details](docs/HUGGING-FACE.md).
+
 ## October 6, 2026 — First public source snapshot
 
 - Publish [Blissful Ignorance on GitHub](https://github.com/Maverick0351a/blissful-ignorance)
@@ -42,5 +51,6 @@
   distinct in the public introduction.
 
 The presentation began as a local preview and is included in the first public
-source snapshot. No Hugging Face Space is deployed. Full history and evidence boundaries are in
+source snapshot. The later static Hugging Face publication is recorded above.
+Full history and evidence boundaries are in
 [the progress report](docs/PROGRESS.md) and [implementation status](docs/STATUS.md).

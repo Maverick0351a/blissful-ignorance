@@ -53,11 +53,22 @@ Naming check: an [existing itch.io game](https://hoork.itch.io/blissful-ignoranc
 uses the same display title. The chosen working title remains Blissful
 Ignorance; no name-availability or trademark-clearance claim is made.
 
-## Hosting and later checkpoints
+## Free recorded showcase
 
-Neither GitHub Pages nor a Hugging Face Space is deployed. The repository's
-HTML files run locally; GitHub's file viewer displays their source. A Static
-Space alone cannot execute the Python backend. A future Docker Space needs
+The [Hugging Face Space](https://huggingface.co/spaces/Maverick03511/blissful-ignorance)
+was published October 6, 2026 with the free static SDK. It puts a screenshot
+of the playable test world first, followed by interactive per-learner results
+and recorded experiment playback. It does not run or train a live population.
+The 11 selected files come from the already-public source snapshot; no models,
+packages, paid compute, private saves or raw training traces are required.
+See [publication checks and reproduction](HUGGING-FACE.md).
+
+GitHub Pages is not deployed. GitHub's file viewer displays HTML source; use
+the Space or open the downloaded research page locally to interact with it.
+
+## Live hosting and later checkpoints
+
+A static Space cannot execute the Python backend. A future Docker Space needs
 reviewed proxy host/origin configuration, iframe-compatible headers, a
 container image and Dockerfile, resource limits and an actual smoke test.
 
@@ -66,7 +77,7 @@ without a permitted way to resume; this is open finding AUD-09. Resolve it
 before advertising a running shared demo. Per-visitor interactive worlds and
 online training also need explicit session and resource designs.
 
-No Docker image was downloaded or built for this publication. Verify current
+No Docker image was downloaded or built for either publication. Verify current
 hosting persistence and limits before relying on it for a continuing
 population. Development training remains local; paid hosting is a separate
 decision.
@@ -75,8 +86,9 @@ Evaluated policy checkpoints may later be published separately with training
 configuration, task definitions, licenses and held-out results. Their model
 cards should identify task-specific capabilities and limitations.
 
-References checked October 4, 2026:
+References checked October 6, 2026:
 
 - [Hugging Face Docker Spaces](https://huggingface.co/docs/hub/spaces-sdks-docker)
 - [Static HTML Spaces](https://huggingface.co/docs/hub/spaces-sdks-static)
 - [Spaces overview](https://huggingface.co/docs/hub/spaces-overview)
+- [Space configuration](https://huggingface.co/docs/hub/spaces-config-reference)

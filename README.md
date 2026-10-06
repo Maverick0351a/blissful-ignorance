@@ -7,8 +7,9 @@ observations do not identify you as the creator.
 
 **Early research prototype · Apache-2.0 · Local learning**
 
-[Play the world](#play-locally) · [Progress report](docs/PROGRESS.md) ·
-[Interactive research](docs/progress/index.html) · [Milestones](docs/MILESTONES.md)
+[Play the world](#play-locally) ·
+[Recorded showcase](https://huggingface.co/spaces/Maverick03511/blissful-ignorance) ·
+[Progress report](docs/PROGRESS.md) · [Milestones](docs/MILESTONES.md)
 
 [![The playable Blissful Ignorance valley with its characters and controls](docs/progress/world-preview.jpg)](#play-locally)
 
@@ -47,8 +48,10 @@ software checks does not establish a new learned skill.
 [Read the experiment](docs/PRACTICE-AMOUNT.md), inspect [machine-readable
 results](docs/progress/results.json), or open **`docs/progress/index.html`** in
 your browser for every learner's results and the actual recorded comparison.
-The showcase works offline with no model or game server. GitHub displays its
-HTML source; download the checkout to use the interactive page.
+The [free Hugging Face showcase](https://huggingface.co/spaces/Maverick03511/blissful-ignorance)
+hosts the interactive results and recorded playback. It does not run or train
+a live population. The same research page also works offline with no model or
+game server. See [hosting and reproduction](docs/HUGGING-FACE.md).
 
 ## What you can do
 

@@ -2,6 +2,24 @@
 
 Updated October 6, 2026 (America/Los_Angeles).
 
+## Free Hugging Face showcase — October 6
+
+The [recorded showcase](https://huggingface.co/spaces/Maverick03511/blissful-ignorance)
+is public and running as a free static Space. It shows the playable map and
+characters in a screenshot, interactive score filters and recorded feeding
+playback. No live models run there. The local population stayed private and
+manually paused at tick 85,447 with the same eight PPO learners and Laya.
+
+The package has 11 reviewed files from the published GitHub snapshot. All 14
+chart views matched the aggregate data locally; three replay conditions and
+hosted filtering, scrubbing, playback and restart were checked. The hosted
+desktop page had no document overflow or browser warnings/errors. The Space's
+floating header has dedicated clearance above navigation. See
+[reproduction and evidence limits](HUGGING-FACE.md).
+
+This is GT-00 delivery work. GT-01 and the seven implementation audit findings
+remain open; publication does not establish another learned capability.
+
 ## Public GitHub source — October 6
 
 The first public source snapshot is at
@@ -14,8 +32,9 @@ The file inventory, hashes, local links and JavaScript syntax were checked.
 
 This is GT-00 delivery work; GT-01 remains open and seven implementation audit
 findings remain. Raw traces, checkpoints, live histories, operational watch
-logs and private Git history stay local. The source publication does not deploy
-a shared game server or a Hugging Face Space. See [publishing status](PUBLISHING.md).
+logs and private Git history stay local. The source publication itself did not
+deploy hosting; the subsequent static Space is recorded above. No shared game
+server is deployed. See [publishing status](PUBLISHING.md).
 
 ## Preservation fixes installed — October 6
 

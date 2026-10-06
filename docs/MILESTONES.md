@@ -52,6 +52,12 @@ front page, with character following, an all-residents camera, expandable map,
 touch movement and linked research. This remains GT-00 work; see
 [UI validation](PROGRESS-VALIDATION.md), not evidence of a new learned skill.
 
+October 6 publication follow-up makes the source public on GitHub and the
+[recorded showcase](https://huggingface.co/spaces/Maverick03511/blissful-ignorance)
+available on a free static Hugging Face Space. This extends GT-00 delivery;
+the hosted page runs recorded playback and charts, without a live learning
+population. [Hosting validation](HUGGING-FACE.md) keeps these boundaries explicit.
+
 The main population has eight independent recurrent PPO residents and a
 distinct Laya NPU resident. Laya's pretrained weights are frozen; her private
 context is persistent. Clef is an installed experimental comparison, with no
